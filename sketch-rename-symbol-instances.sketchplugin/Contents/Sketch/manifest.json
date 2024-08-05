@@ -1,0 +1,23 @@
+{
+  "name": "Sketch rename symbol instances",
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Rename symbol instances",
+      "identifier": "sketch-rename-symbol-instances.rename-symbol-instances",
+      "script": "__rename-symbol-instances.js"
+    }
+  ],
+  "menu": {
+    "title": "Rename symbol instances",
+    "items": [
+      "sketch-rename-symbol-instances.rename-symbol-instances"
+    ]
+  },
+  "version": "0.1.0",
+  "description": "Rename symbol instances to match their originating libraries",
+  "identifier": "sketch-rename-symbol-instances",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
