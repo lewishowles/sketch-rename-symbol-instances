@@ -15,7 +15,7 @@
       "sketch-rename-symbol-instances.rename-symbol-instances"
     ]
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rename symbol instances to match their originating libraries",
   "identifier": "sketch-rename-symbol-instances",
   "disableCocoaScriptPreprocessor": true,

@@ -1,16 +1,10 @@
-# build artifacts
-rename-symbol-instances.sketchplugin
-
 # npm
 node_modules
-.npm
-npm-debug.log
+.npmrc
 
-# mac
+# macOS files
 .DS_Store
 
-# WebStorm
-.idea
-
-# sketch
-# sketch-assets
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
