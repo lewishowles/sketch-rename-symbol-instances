@@ -14,8 +14,10 @@ export default function() {
 	function renameSymbolInstances(layers) {
 		layers.forEach(layer => {
 			if (layer.type === 'SymbolInstance') {
-				layer.name = layer.master.name;
-				count++;
+				if (layer.name !== layer.master.name) {
+					layer.name = layer.master.name;
+					count++;
+				}
 			} else if (layer.layers && layer.layers.length > 0) {
 				renameSymbolInstances(layer.layers);
 			}

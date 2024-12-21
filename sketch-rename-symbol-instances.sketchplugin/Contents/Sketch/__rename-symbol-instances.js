@@ -115,8 +115,10 @@ var sketch = __webpack_require__(/*! sketch */ "sketch");
   function renameSymbolInstances(layers) {
     layers.forEach(function (layer) {
       if (layer.type === 'SymbolInstance') {
-        layer.name = layer.master.name;
-        count++;
+        if (layer.name !== layer.master.name) {
+          layer.name = layer.master.name;
+          count++;
+        }
       } else if (layer.layers && layer.layers.length > 0) {
         renameSymbolInstances(layer.layers);
       }
